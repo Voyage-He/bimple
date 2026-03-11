@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "bimple",
     "description": "simplify",
-    "version": "1.2",
+    "version": "0.2.0",
     "permissions": ["storage"],
     "action": {
       "default_popup": "popup.html"
@@ -13,7 +13,8 @@
     "content_scripts": [
         {
             "matches": ["https://*.bilibili.com/*"],
-            "js": ["content/index.js"]
+            "js": ["content/index.js"],
+            "run_at": "document_start"
         }
     ]
 }
