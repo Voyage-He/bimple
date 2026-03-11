@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bimple 设置</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 280px;
+            padding: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        h1 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section {
+            margin-bottom: 16px;
+        }
+        
+        .section-title {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f5f5f5;
+        }
+        
+        .option:last-child {
+            border-bottom: none;
+        }
+        
+        .option-label {
+            flex: 1;
+        }
+        
+        /* Toggle Switch */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 22px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .3s;
+            border-radius: 22px;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .3s;
+            border-radius: 50%;
+        }
+        
+        input:checked + .slider {
+            background-color: #00AEEC;
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(18px);
+        }
+        
+        .footer {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧹 bimple 设置</h1>
+    
+    <div class="section">
+        <div class="section-title">首页</div>
+        <div class="option">
+            <span class="option-label">隐藏推荐内容</span>
+            <label class="switch">
+                <input type="checkbox" id="hideFeed" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="option">
+            <span class="option-label">隐藏搜索热点</span>
+            <label class="switch">
+                <input type="checkbox" id="hideTrending" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="option">
+            <span class="option-label">清除搜索占位符</span>
+            <label class="switch">
+                <input type="checkbox" id="clearPlaceholder" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-title">视频页</div>
+        <div class="option">
+            <span class="option-label">隐藏顶部 Header</span>
+            <label class="switch">
+                <input type="checkbox" id="hideHeader" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="option">
+            <span class="option-label">隐藏侧边推荐</span>
+            <label class="switch">
+                <input type="checkbox" id="hideSidebarRec" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="option">
+            <span class="option-label">隐藏评论区</span>
+            <label class="switch">
+                <input type="checkbox" id="hideComments" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="option">
+            <span class="option-label">隐藏播放完成推荐</span>
+            <label class="switch">
+                <input type="checkbox" id="hideEndingRec" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+    
+    <div class="footer">
+        刷新页面后生效
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
