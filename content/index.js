@@ -48,7 +48,8 @@
         if (settings.hideSidebarRec) {
             selectors.push(
                 '.right-container-inner > :not(:first-child):not(:has(.video-pod))',
-                '.right-container-inner > :not(:first-child) > :not(.video-pod)'
+                '.right-container-inner > :not(:first-child) > :not(.video-pod)',
+                '.recommend-list-container'
             );
         }
         if (settings.hideComments) {
@@ -101,7 +102,8 @@
         const headerSelectors = ['#biliMainHeader'];
         const sidebarSelectors = [
             '.right-container-inner > :not(:first-child):not(:has(.video-pod))',
-            '.right-container-inner > :not(:first-child) > :not(.video-pod)'
+            '.right-container-inner > :not(:first-child) > :not(.video-pod)',
+            '.recommend-list-container'
         ];
         const commentSelectors = ['#commentapp'];
         const endingSelectors = ['.bpx-player-ending-related'];

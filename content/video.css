@@ -5,6 +5,9 @@
 .right-container-inner > :not(:first-child):not(:has(.video-pod)),
 .right-container-inner > :not(:first-child) > :not(.video-pod),
 
+/* 隐藏新版页面推荐列表 */
+.recommend-list-container,
+
 /* 隐藏评论 */
 #commentapp,
 
