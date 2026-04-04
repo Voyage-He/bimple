@@ -78,4 +78,12 @@ bimple **不收集任何用户数据**。所有设置仅保存在本地浏览器
 
 ---
 
+## 🙏 鸣谢
+
+本项目由 GLM-5 模型支持开发。
+
+<img src="https://z.ai/logo.svg" alt="智谱AI" width="100">
+
+---
+
 <p align="center">Made with ❤️ for a cleaner Bilibili</p>
