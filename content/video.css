@@ -1,9 +1,9 @@
 /* 隐藏header */
 #biliMainHeader,
 
-/* 隐藏右侧边栏中的推荐信息 */
-.right-container-inner > :not(:first-child, :has(#multi_page)),
-#multi_page ~ *,
+/* 隐藏右侧边栏中的推荐信息（保留分集选项 .video-pod）*/
+.right-container-inner > :not(:first-child):not(:has(.video-pod)),
+.right-container-inner > :not(:first-child) > :not(.video-pod),
 
 /* 隐藏评论 */
 .left-container-under-player > :not(:first-child),

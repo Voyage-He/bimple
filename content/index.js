@@ -47,8 +47,8 @@
         }
         if (settings.hideSidebarRec) {
             selectors.push(
-                '.right-container-inner > :not(:first-child, :has(#multi_page))',
-                '#multi_page ~ *'
+                '.right-container-inner > :not(:first-child):not(:has(.video-pod))',
+                '.right-container-inner > :not(:first-child) > :not(.video-pod)'
             );
         }
         if (settings.hideComments) {
@@ -100,8 +100,8 @@
         // 视频页
         const headerSelectors = ['#biliMainHeader'];
         const sidebarSelectors = [
-            '.right-container-inner > :not(:first-child, :has(#multi_page))',
-            '#multi_page ~ *'
+            '.right-container-inner > :not(:first-child):not(:has(.video-pod))',
+            '.right-container-inner > :not(:first-child) > :not(.video-pod)'
         ];
         const commentSelectors = ['.left-container-under-player > :not(:first-child)'];
         const endingSelectors = ['.bpx-player-ending-related'];
