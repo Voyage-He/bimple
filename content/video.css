@@ -6,7 +6,7 @@
 .right-container-inner > :not(:first-child) > :not(.video-pod),
 
 /* 隐藏评论 */
-.left-container-under-player > :not(:first-child),
+#commentapp,
 
 /* 隐藏播放完成后出现的推荐信息 */
 .bpx-player-ending-related

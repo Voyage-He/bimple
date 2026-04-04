@@ -52,7 +52,7 @@
             );
         }
         if (settings.hideComments) {
-            selectors.push('.left-container-under-player > :not(:first-child)');
+            selectors.push('#commentapp');
         }
         if (settings.hideEndingRec) {
             selectors.push('.bpx-player-ending-related');
@@ -103,7 +103,7 @@
             '.right-container-inner > :not(:first-child):not(:has(.video-pod))',
             '.right-container-inner > :not(:first-child) > :not(.video-pod)'
         ];
-        const commentSelectors = ['.left-container-under-player > :not(:first-child)'];
+        const commentSelectors = ['#commentapp'];
         const endingSelectors = ['.bpx-player-ending-related'];
         
         // 分类处理
